@@ -1,5 +1,5 @@
 import { Label } from '@radix-ui/react-label';
-import { useState } from 'react'
+import { use, useState } from 'react'
 import { Input } from './ui/input';
 
 interface Props {
@@ -7,11 +7,15 @@ interface Props {
 }
 
 export default function InputForm({ onGenerate }: Props) {
+  
+
   const [name, setName] = useState("UltraGlow Facial Cleanser")
   const [features, setFeatures] = useState("Aloe Vera, Paraben-free, 120ml tube")
   const [category, setCategory] = useState("Skincare product")
+  const [loading, setLoading] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
+    setLoading(true)
     e.preventDefault()
     onGenerate({ name, features, category })
   }
@@ -71,6 +75,7 @@ export default function InputForm({ onGenerate }: Props) {
       <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
         Generate
       </button>
+      {loading ? <p className="text-gray-500 mt-2">Generating...</p> : null}
     </form>
     </div>
   )
