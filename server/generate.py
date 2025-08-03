@@ -1,4 +1,17 @@
 import requests
+import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("GEMINI_API_KEY")
+
+genai.configure(api_key=api_key)
+
+print("API Key:", api_key)
+
+model = genai.GenerativeModel("models/gemini-2.5-pro")
 
 def generate_description(name, features, category):
     prompt = (
@@ -7,19 +20,11 @@ def generate_description(name, features, category):
     )
 
     try:
-        response = requests.post(
-            "http://localhost:11434/api/generate",
-            json={
-                "model": "gemma2:2b",  # Using the faster gemma model
-                "prompt": prompt,
-                "stream": False       # Disable streaming for simpler response
-            }
-        )
-
-        if response.status_code == 200:
-            return response.json().get("response", "No response from model")
-        else:
-            return f"Error: {response.status_code} - {response.text}"
+        response = model.generate_content(prompt)
+        return response.text
 
     except Exception as e:
         return f"Exception during generation: {str(e)}"
+        
+  
+
