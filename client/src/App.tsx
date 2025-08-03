@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import axios from 'axios'
 import InputForm from './components/InputForm'
-import Layout from './components/layouts/Layout'
 
 function App() {
   const [description, setDescription] = useState("")
-
   const handleGenerate = async (data: { name: string; features: string; category: string }) => {
     const res = await axios.post("http://localhost:5000/generate-description", data)
     setDescription(res.data.description)
