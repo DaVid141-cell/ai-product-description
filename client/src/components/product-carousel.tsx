@@ -101,7 +101,7 @@ const Items =[
         'discountPrice': 39.99
     },
     {
-        'img': 'images/test3.jpg',
+        'img': 'images/product-items/Cat-Eye-Designer-Shades.jpg',
         'alt': 'Cat-eye sunglasses',
         'name': 'Cat-Eye Designer Shades',
         'brand': 'Visioné',
@@ -111,7 +111,7 @@ const Items =[
         'discountPrice': 51.99
     },
     {
-        'img': 'images/test3.jpg',
+        'img': 'images/product-items/Essential-Long-Sleeve-Tee.jpg',
         'alt': 'White cotton long sleeve tee',
         'name': 'Essential Long Sleeve Tee',
         'brand': 'CozyFit',
@@ -121,7 +121,7 @@ const Items =[
         'discountPrice': 24.99
     },
     {
-        'img': 'images/test3.jpg',
+        'img': 'images/product-items/Striped-Crew-Neck-Shirt.jpg',
         'alt': 'Striped long sleeve shirt',
         'name': 'Striped Crew Neck Shirt',
         'brand': 'DailyLayer',
