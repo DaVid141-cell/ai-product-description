@@ -9,10 +9,11 @@ CORS(app)
 def generate():
     data = request.get_json()
     name = data.get("name")
+    brand = data.get("brand")
     features = data.get("features")
     category = data.get("category")
 
-    description = generate_description(name, features, category)
+    description = generate_description(name, brand, features, category)
     return jsonify({"description": description})
 
 if __name__ == "__main__":
