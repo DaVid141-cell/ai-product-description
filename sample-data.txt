@@ -1,0 +1,48 @@
+
+    "Product Name": "ArcticShield Winter Jacket",
+    "Brand": "FrostLine",
+    "Price": 129.99,
+    "Discount Price": 99.99,
+    "Features": "Waterproof, Thermal-lined, Adjustable Hood",
+    "Category": "Jackets",
+    "Image URL": "Upload an image"
+
+----------------------------------------------------------
+
+    "Product Name": "Luxe Leather Handbag",
+    "Brand": "Eleganzia",
+    "Price": 249.99,
+    "Discount Price": 199.99,
+    "Features": "Genuine leather, Adjustable strap, Multiple compartments",
+    "Category": "Handbags",
+    "Image URL": "Upload an image"
+
+----------------------------------------------------------
+
+    "Product Name": "Evening Grace Maxi Dress",
+    "Brand": "VogueLine",
+    "Price": 89.99,
+    "Discount Price": 69.99,
+    "Features": "Silk fabric, Sleeveless, Floor-length",
+    "Category": "Dresses",
+    "Image URL": "Upload an image"
+
+----------------------------------------------------------
+
+    "Product Name": "AeroVision Aviator Sunglasses",
+    "Brand": "SunScape",
+    "Price": 59.99,
+    "Discount Price": 44.99,
+    "Features": "UV400 protection, Polarized lenses, Lightweight frame",
+    "Category": "Sunglasses",
+    "Image URL": "Upload an image"
+
+----------------------------------------------------------
+
+    "Product Name": "UrbanFlex Sport Sunglasses",
+    "Brand": "ActiveLens",
+    "Price": 39.99,
+    "Discount Price": 29.99,
+    "Features": "Anti-glare lenses, Rubberized frame, UV protection",
+    "Category": "Sunglasses",
+    "Image URL": "Upload an image"
