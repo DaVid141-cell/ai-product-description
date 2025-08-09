@@ -53,9 +53,9 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #FE7743;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: #273F4F;
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -186,7 +186,7 @@
     padding: 20px;
     top: 50%;
     left: 100px;
-    width: 400px;
+    width: 550px;
     text-align: left;
     color: #eee;
     border-radius: 20px;
@@ -218,7 +218,7 @@
 }
 
 .content button{
-  background-color: #4a90e2;
+  background-color: #2568b5;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
