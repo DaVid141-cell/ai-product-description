@@ -1,3 +1,4 @@
+import Footer from "../footer"
 import { Header } from "../ui/header"
 
 export default function HomeLayout({ children }) {
@@ -7,6 +8,7 @@ export default function HomeLayout({ children }) {
                 <main>
                     { children }
                 </main>
+            <Footer/>
         </>
     )
 }

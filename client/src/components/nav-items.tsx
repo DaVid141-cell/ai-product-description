@@ -1,11 +1,24 @@
+import {Link} from 'react-router-dom';
 
 export default function NavItems (){
     return(
         <nav>
             <ul className="flex space-x-4">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/about" className="hover:underline">About</a></li>
-                <li><a href="/contact" className="hover:underline">Contact</a></li>
+                <li>
+                    <Link to="/" className="hover:underline">Home</Link>
+                    </li>
+                <li>
+                    <Link to="/about" className="hover:underline">About</Link>
+                    </li>
+                <li>
+                    <Link to="/dashboard" className="hover:underline">AI-Generator</Link>
+                </li>
+                <li>
+                    <Link to="/dashboard" className="hover:underline">Products</Link>
+                </li>
+                <li>
+                    <Link to="/dashboard" className="hover:underline">Categories</Link>
+                </li>
             </ul>
         </nav>
         

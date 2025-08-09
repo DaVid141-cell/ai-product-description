@@ -134,7 +134,11 @@ const Items =[
 
 export default function ProductCarousel() {
   return (
-    <section className="p-6">
+    <section className="m-12">
+      <div className="flex flex-col items-start justify-between">
+            <h1 className="text-4xl font-bold text-black mb-4">Featured Products</h1>
+            <p className="text-md text-black mb-10">Discover our latest collection of featured products, handpicked for you.</p>
+      </div>
       <Carousel
         opts={{
           align: "start",

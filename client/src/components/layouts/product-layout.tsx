@@ -1,6 +1,6 @@
 export default function ProductLayout({children}){
     return(
-        <div className="m-10">
+        <div className="">
             {children}
         </div>
     )
