@@ -2,7 +2,7 @@ import { Heart } from "lucide-react";
 import { ProductBreadCrumb } from "./product-breadcrumb";
 import { useState } from "react";
 
-export default function ProductCard({ productBox }) {
+export default function ProductCard({ productBox, buttonAdd = "Add to Cart", buttonBuy = "Buy Now"  }) {
     
     const [Wishlist, setWishlist] = useState(false);
     
@@ -21,11 +21,16 @@ export default function ProductCard({ productBox }) {
             </button>
 
             {/* Product Image */}
-            <img
-                src={productBox.img}
-                alt={productBox.alt}
-                className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-72"
+            {productBox.img ? (
+            <img className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-72" 
+                src={productBox.img} 
+                alt={productBox.alt || "Product Image"} 
             />
+            ) : (
+                <div className="bg-gray-200 w-full h-48 flex items-center justify-center text-sm text-gray-500 rounded-md">
+                    No image uploaded
+                </div>
+            )}
 
             {/* Product Details */}
             <div className="p-4 border-t border-gray-200 space-y-2">
@@ -51,10 +56,10 @@ export default function ProductCard({ productBox }) {
                 {/* Actions */}
                 <div className="mt-auto grid grid-cols-2 gap-2 pt-2">
                     <button className="w-full rounded bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 transition hover:scale-105">
-                        Add to Cart
+                        {buttonAdd}
                     </button>
                     <button className="w-full rounded bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:scale-105">
-                        Buy Now
+                        {buttonBuy}
                     </button>
                 </div>
             </div>
