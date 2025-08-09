@@ -13,6 +13,7 @@
 - Generate professional and engaging product descriptions instantly using Gemini API.
 
 ---
+## ­🚀 Getting Started
 
 ## 📂 Environment Variables
 Before running the server, create a `.env` file inside the **server** directory with the following content:
