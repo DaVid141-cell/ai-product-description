@@ -40,7 +40,7 @@ GEMINI_API_KEY=your_api_key_here
 
 ### **Clone the Repository**
 ```bash
-git clone <your-repo-url>
+git clone <repository-url>
 cd <project-directory>
 ```
 
@@ -80,10 +80,17 @@ python app.py
 ---
 
 ## 🚀 Running in Production
-For production deployment:
-- Build client with:
+***For production deployment:***
+***First Run the Server with:***
 ```bash
-cd <project-client>
+cd <project-directory
+cd <server>
+venv\Scripts\activate
+python app.py
+```
+***Second Run the website with:***
+```bash
+cd <project-directory
+cd <client>
 npm run build
 ```
-
