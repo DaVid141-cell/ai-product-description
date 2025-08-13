@@ -81,6 +81,7 @@ python app.py
 
 ## 🚀 Running in Production
 ***For production deployment:***
+
 ***First Run the Server with:***
 ```bash
 cd <project-directory
