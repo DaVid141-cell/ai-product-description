@@ -54,7 +54,7 @@ export default function InputForm() {
   };
 
   const parsedPrice = parseFloat(price) ||  0 
-  const parsedDiscountPrice = parseFloat(discountPrice)
+  const parsedDiscountPrice = parseFloat(discountPrice) || 0
 
   const productPreview = {
     img: imageURL,
